@@ -1,0 +1,97 @@
+:root {
+  /* Colors */
+  --Yellow: #eac926;
+  --Blue: #03264c;
+  --light_Blue: #1259c3;
+  --Dark-Gray: #666;
+  --White-Gray: #ebebeb;
+  --Green: #39b54a;
+
+  /* font family */
+  --Font_Robot: "Roboto";
+  --h2: 24px;
+  --paragraph: 12px;
+  --prices:18px;
+  --offers:16px;
+  --descriptions:16px;
+}
+body{
+    font-family: 'Roboto', sans-serif;  
+}
+.header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    background: var(--Yellow);
+}
+.logo{
+    width: 400px;
+    padding: 15px;
+}
+nav{
+    width: 100%;
+}
+.menu__item{
+    list-style-type: none;
+}
+.menu__link{
+ text-decoration: none;
+ color: #000;
+ font-size: 16px;
+}
+
+.bars{
+    background-color: var(--light_Blue);
+    color: var(--White-Gray);
+    font-size: 25px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.banner__img{
+    width: 100%;
+}
+
+.card{
+    width: 250px;
+    height: 400px;
+    margin: 0 auto;
+
+}
+h2{
+    font-size: var(--h2);
+    text-align: center;
+}
+.card__img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.prices{
+ font-size: var(--prices);
+}
+.offers{
+    font-size: var(--offers);
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 10px auto;
+    
+}
+.blue{
+    color: var(--light_Blue);
+    font-size: 36px;
+}
+h4{
+    font-size: var(--descriptions);
+}
+p{
+    font-size: var(--paragraph); 
+}
