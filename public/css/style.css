@@ -8,7 +8,6 @@
   --Green: #39b54a;
 
   /* font family */
-  --Font_Robot: "Roboto";
   --h2: 24px;
   --paragraph: 12px;
   --prices:18px;
@@ -18,6 +17,7 @@
 body{
     font-family: 'Roboto', sans-serif;  
 }
+/* header */
 .header{
     width: 100%;
     height: auto;
@@ -28,8 +28,11 @@ body{
     background: var(--Yellow);
 }
 .logo{
-    width: 400px;
+    width: 90%;
     padding: 15px;
+}
+img{
+    width: 100%;
 }
 nav{
     width: 100%;
@@ -40,9 +43,10 @@ nav{
 .menu__link{
  text-decoration: none;
  color: #000;
- font-size: 16px;
+ font-size: var(--paragraph);
 }
-
+/* fin del header */
+/* banner */
 .bars{
     background-color: var(--light_Blue);
     color: var(--White-Gray);
@@ -54,7 +58,8 @@ nav{
 .banner__img{
     width: 100%;
 }
-
+/* fin del banner */
+/* sesion productos */
 .card{
     width: 250px;
     height: 400px;
@@ -76,7 +81,8 @@ h2{
 .offers{
     font-size: var(--offers);
 }
-
+/* fin de sesion de productos */
+/* footer */
 .box{
     display: flex;
     flex-direction: column;
@@ -95,3 +101,4 @@ h4{
 p{
     font-size: var(--paragraph); 
 }
+/* fin del footer */
