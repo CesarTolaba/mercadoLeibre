@@ -1,3 +1,4 @@
+
 :root {
   /* Colors */
   --Yellow: #eac926;
@@ -7,98 +8,180 @@
   --White-Gray: #ebebeb;
   --Green: #39b54a;
 
-  /* font family */
-  --h2: 24px;
+  /* font size */
+  --title: 24px;
   --paragraph: 12px;
-  --prices:18px;
-  --offers:16px;
-  --descriptions:16px;
+  --prices: 18px;
+  --offers: 16px;
+  --descriptions: 16px;
 }
-body{
-    font-family: 'Roboto', sans-serif;  
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--White-Gray);
 }
-/* header */
-.header{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    background: var(--Yellow);
+.header {
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--Yellow);
 }
-.logo{
-    width: 70%;
-    padding: 15px;
+.logo {
+  width: 300px;
 }
-img{
-    width: 100%;
+img {
+  width: 100%;
 }
-nav{
-    width: 100%;
-}
-.menu__item{
-    list-style-type: none;
-}
-.menu__link{
- text-decoration: none;
- color: #000;
- font-size: var(--paragraph);
-}
-/* fin del header */
-/* banner */
-.bars{
-    background-color: var(--light_Blue);
-    color: var(--White-Gray);
-    font-size: 25px;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 5px;
-}
-.banner__img{
-    width: 100%;
-}
-/* fin del banner */
-/* sesion productos */
-.card{
-    width: 250px;
-    height: 400px;
-    margin: 0 auto;
 
+.descriptions {
+  font-size: var(--descriptions);
 }
-h2{
-    font-size: var(--h2);
+nav {
+  display: none;
+}
+.menu_item {
+  list-style-type: none;
+}
+.menu_like {
+  text-decoration: none;
+  color: #000;
+}
+.bars {
+  padding: 10px;
+  border-radius: 6px;
+  background-color: var(--light_Blue);
+  color: var(--White-Gray);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.banner {
+  width: 100%;
+  margin-bottom: -4px;
+}
+/* main */
+.visits,
+.promotions {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.title {
+  text-align: center;
+  font-size: var(--title);
+}
+.products {
+  max-width: 400px;
+  min-width: 300px;
+  margin: 10px 0;
+  background-color: #fff;
+}
+
+.products_info {
+  border-top: 1px solid #ebebeb;
+}
+.truck,
+.prices,
+.offers,
+.description {
+  margin-left: 15px;
+}
+.truck {
+  color: var(--Green);
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid var(--Green);
+  margin-top: 15px;
+}
+.prices {
+  font-size: var(--prices);
+}
+.offers {
+  font-size: var(--offers);
+  color: var(--Green);
+  padding-bottom: 15px;
+}
+.description {
+  padding-bottom: 15px;
+  font-size: var(--descriptions);
+  display: none;
+}
+                 /* main */
+               /*  Footer*/
+
+.card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px auto;
+}
+.icon {
+  color: var(--light_Blue);
+  font-size: 32px;
+}
+.date{
+    font-size: var(--descriptions);
     text-align: center;
 }
-.card__img{
-    width: 100%;
+.card .paragraph {
+  text-align: center;
+}
+span {
+  font-size: var(--paragraph);
+}
+        /* fin del footer */
+                  /* tablets */
+@media (min-width: 361px) {
+  .logo {
+    width: 90%;
+  }
+  nav {
+    width: 95%;
     display: block;
-    margin: 0 auto;
+  }
+  .bars {
+    display: none;
+  }
+  .products {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  .offers {
+    padding-bottom: 0;
+  }
+  .description {
+    display: block;
+  }
+  span {
+    margin-left: 5px;
+  }
 }
-.prices{
- font-size: var(--prices);
+                /*Desktop*/
+@media (min-width: 769px) {
+  .logo {
+    width: 70%;
+  }
+  nav {
+    width: 80%;
+    display: block;
+  }
+  .bars {
+    display: none;
+  }
+  .products {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  .offers {
+    padding-bottom: 0;
+  }
+  .description {
+    display: block;
+  }
+  span {
+    margin-left: 15px;
+  }
 }
-.offers{
-    font-size: var(--offers);
-}
-/* fin de sesion de productos */
-/* footer */
-.box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px;
-    margin: 10px auto;
-    
-}
-.blue{
-    color: var(--light_Blue);
-    font-size: 36px;
-}
-h4{
-    font-size: var(--descriptions);
-}
-p{
-    font-size: var(--paragraph); 
-}
-/* fin del footer */
