@@ -1,0 +1,39 @@
+/*  Footer*/
+.footer{
+    margin-top: 20px;
+}
+.card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 10px auto;
+  }
+  .icon {
+    color: var(--light_Blue);
+    font-size: 32px;
+  }
+  .date {
+    font-size: var(--descriptions);
+    text-align: center;
+  }
+  .card .paragraph {
+    text-align: center;
+  }
+  span {
+    font-size: var(--paragraph);
+  }
+  @media (min-width:620px){
+
+      .icon{
+          font-size: 38px;
+      }
+  }
+  @media (min-width:1024px) {
+    .box_card{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+  }
+  }

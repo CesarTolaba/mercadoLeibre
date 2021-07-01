@@ -1,0 +1,16 @@
+:root {
+  /* Colors */
+  --Yellow: #eac926;
+  --Blue: #03264c;
+  --light_Blue: #1259c3;
+  --Dark-Gray: #666;
+  --White-Gray: #ebebeb;
+  --Green: #39b54a;
+
+  /* font size */
+  --title: 24px;
+  --paragraph: 12px;
+  --prices: 18px;
+  --offers: 16px;
+  --descriptions: 16px;
+}
