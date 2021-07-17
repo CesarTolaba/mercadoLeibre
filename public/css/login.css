@@ -1,0 +1,56 @@
+/* @import url('variables.css'); */
+@import url("variables.css");
+@import url("header.css");
+@import url("footer.css");
+
+body {
+  background-color: var(--White-Gray);
+}
+
+main{
+    background-color: var(--White-Gray);
+    margin: 0 auto;
+}
+.form{
+    width: 100%;
+    min-width: 300px;
+    max-width: 550px;
+    margin: 40px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, .1), -4px 4px 0 rgba(0, 0, 0, .1);
+}
+.form__title{
+    text-align: center;
+}
+.box{
+    min-width: 300px;
+    width: 95%;
+    max-width: 500px;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    margin: 20px auto;
+}
+.user{
+  flex-flow: row;
+}
+input[type="checkbox"],[type="radio"]{
+    margin-right: 5px;
+}
+.btn {
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-flow: row;
+}
+.btn__send {
+  border: none;
+  background-color: var(--light_Blue);
+  border-radius: 3px;
+}
+.btn__link {
+  display: block;
+  padding: 10px 20px;
+  color: var(--White-Gray);
+  text-decoration: none;
+}
